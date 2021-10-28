@@ -2,9 +2,6 @@ body {
   background-color: rgb(32, 33, 36);
   color: rgb(189, 193, 198);
   font-family: "Roboto", sans-serif;
-  /* height: 95vh; */
-  border: green 1px dotted;
-  /* padding: 100px; */
 }
 
 body,
@@ -61,11 +58,13 @@ main {
 }
 
 a {
-  color: rgb(138, 180, 248);
   text-decoration: none;
 }
+span a {
+  color: rgb(138, 180, 248);
+}
 
-a:hover {
+span a:hover {
   text-decoration: underline;
 }
 
@@ -86,4 +85,11 @@ a:hover {
 }
 .contacts i {
   display: inline-flex;
+}
+
+a i {
+  color: rgb(189, 193, 198);
+}
+a i:hover {
+  color: rgb(138, 180, 248);
 }
