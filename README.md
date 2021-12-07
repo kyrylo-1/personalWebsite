@@ -1,1 +1,1 @@
-My personal website: [kyryloavramenko.com](https://kyryloavramenko.com)
+My personal website: [kyrylo.io](https://kyrylo.io)
