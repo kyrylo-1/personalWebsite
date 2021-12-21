@@ -1,1 +1,1 @@
-My personal website: [kyrylo.io](https://kyrylo.io)
+My personal website: [kyrylo.dev](https://kyrylo.dev)
