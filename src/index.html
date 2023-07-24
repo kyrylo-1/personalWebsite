@@ -7,11 +7,7 @@
     <title>Kyrylo Avramenko</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
     <link href="css/all.css" rel="stylesheet" />
   </head>
   <body>
@@ -24,9 +20,7 @@
           <h1>Kyrylo Avramenko</h1>
           <span>
             Software engineer @
-            <a href="https://prescryptive.com/" target="_blank"
-              >Prescryptive Health</a
-            >
+            <a href="https://prescryptive.com/" target="_blank">Prescryptive Health</a>
           </span>
           <div class="horizontal center-content location">
             <span>Seattle, WA</span>
@@ -34,12 +28,28 @@
             <img class="emoji" alt="us" src="images/ua.svg" />
           </div>
           <div class="contacts">
-            <a href="https://www.linkedin.com/in/kyrylo-1/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a>
-            <a href="https://github.com/kyrylo-1" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-            <a rel="noopener nofollow" href="mailto:kir.avramenko@gmail.com" target="_blank"><i class="far fa-envelope fa-lg""></i></a>
+            <a href="https://www.linkedin.com/in/kyrylo-1/" target="_blank"
+              ><i class="fab fa-linkedin-in fa-lg"></i
+            ></a>
+            <a href="https://github.com/kyrylo-1" target="_blank"
+              ><i class="fab fa-github fa-lg"></i
+            ></a>
           </div>
         </div>
       </div>
     </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function switchTheme(e) {
+          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        }
+
+        switchTheme(themeQuery);
+
+        themeQuery.addEventListener('change', switchTheme);
+      });
+    </script>
   </body>
 </html>
