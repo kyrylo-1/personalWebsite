@@ -8,32 +8,38 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    <link href="css/all.css" rel="stylesheet" />
+    <link href="../fontawesome/css/all.css" rel="stylesheet" />
   </head>
   <body>
-    <main>
+    <main style="margin-top: auto; margin-bottom: auto">
       <div class="main-content">
         <div class="image-cropper">
           <img src="images/profile.jpg" class="rounded" />
         </div>
-        <div class="center-text">
+        <div style="text-align: center; align-self: center">
           <h1>Kyrylo Avramenko</h1>
-          <span>
-            Software engineer @
-            <a href="https://prescryptive.com/" target="_blank">Prescryptive Health</a>
-          </span>
-          <div class="horizontal center-content location">
-            <span>Seattle, WA</span>
-            <img class="emoji" alt="us" src="images/us.svg" />
-            <img class="emoji" alt="us" src="images/ua.svg" />
+
+          <div style="display: flex; flex-direction: column; gap: 8px">
+            <span>
+              Software engineer @
+              <a class="blue" href="https://prescryptive.com/" target="_blank">Prescryptive Health</a>
+            </span>
+            <div class="horizontal">
+              <i class="icon fa-solid fa-location-pin"></i>
+              <span>Seattle, WA</span>
+              <img alt="us" src="images/us.svg" style="height: 1.3em; width: 1.3em" />
+            </div>
+            <div class="horizontal">
+              <i class="icon fa-regular fa-envelope"></i>
+              <a href="mailto:contact@kyrylo.info">contact@kyrylo.info</a>
+            </div>
           </div>
+
           <div class="contacts">
             <a href="https://www.linkedin.com/in/kyrylo-1/" target="_blank"
-              ><i class="fab fa-linkedin-in fa-lg"></i
+              ><i class="icon fab fa-linkedin-in fa-lg"></i
             ></a>
-            <a href="https://github.com/kyrylo-1" target="_blank"
-              ><i class="fab fa-github fa-lg"></i
-            ></a>
+            <a href="https://github.com/kyrylo-1" target="_blank"><i class="icon fab fa-github fa-lg"></i></a>
           </div>
         </div>
       </div>

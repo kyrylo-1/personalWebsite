@@ -3,5 +3,20 @@
     "activityBar.background": "#15341F",
     "titleBar.activeBackground": "#1E482B",
     "titleBar.activeForeground": "#F7FCF8"
-  }
+  },
+  "cSpell.ignorePaths": ["src/css"],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.vs": true,
+    "**/bin": true,
+    "**/obj": true,
+    "**/TestResults": true,
+    "node_modules": true
+  },
+  "explorerExclude.backup": {}
 }
