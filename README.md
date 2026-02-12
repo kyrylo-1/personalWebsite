@@ -7,3 +7,7 @@ docker build -t personal-website .
 
 docker run -p 8080:80 personal-website
 ```
+
+# Connect to droplet
+
+Run droplet-connect.sh

@@ -1,0 +1,1 @@
+ssh -i ~/.ssh/digital_ocean_small_droplet root@209.38.158.50
