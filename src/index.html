@@ -1,61 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyrylo Avramenko</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
-    <link href="./fontawesome/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main style="margin-top: auto; margin-bottom: auto">
-      <div class="main-content" style="margin-top: 5rem">
-        <div class="image-cropper">
-          <img src="images/profile.jpg" class="rounded" />
-        </div>
-        <div style="text-align: center; align-self: center">
-          <h1>Kyrylo Avramenko</h1>
-
-          <div style="display: flex; flex-direction: column; gap: 8px">
-            <span>
-              Software engineer @
-              <a class="blue" href="https://prescryptive.com/" target="_blank">Prescryptive Health</a>
-            </span>
-            <div class="horizontal">
-              <i class="icon fa-solid fa-location-pin"></i>
-              <span>Seattle, WA</span>
-              <img alt="us" src="images/us.svg" style="height: 1.3em; width: 1.3em" />
-            </div>
-            <div class="horizontal">
-              <i class="icon fa-regular fa-envelope"></i>
-              <a href="mailto:contact@kyrylo.info">contact@kyrylo.info</a>
-            </div>
-          </div>
-
-          <div class="contacts">
-            <a href="https://www.linkedin.com/in/kyrylo-1/" target="_blank"
-              ><i class="icon fab fa-linkedin-in fa-lg"></i
-            ></a>
-            <a href="https://github.com/kyrylo-1" target="_blank"><i class="icon fab fa-github fa-lg"></i></a>
-          </div>
-        </div>
-      </div>
-    </main>
+    <main id="content"></main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-        const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-        function switchTheme(e) {
-          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
-        }
-
-        switchTheme(themeQuery);
-
-        themeQuery.addEventListener('change', switchTheme);
-      });
+      fetch('content.md')
+        .then((response) => response.text())
+        .then((md) => (document.getElementById('content').innerHTML = marked.parse(md)));
     </script>
   </body>
 </html>
