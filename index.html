@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyrylo Avramenko</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main id="content"></main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      fetch('content.md')
+        .then((response) => response.text())
+        .then((md) => (document.getElementById('content').innerHTML = marked.parse(md)));
+    </script>
+  </body>
+</html>
