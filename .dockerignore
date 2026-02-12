@@ -1,0 +1,10 @@
+.git
+.gitignore
+.claude
+.prettierrc
+README.md
+Dockerfile
+.dockerignore
+node_modules
+*.log
+.DS_Store
